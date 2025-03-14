@@ -1,0 +1,20 @@
+include ':FtcRobotController'
+include ':TeamCode'
+
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.firstinspires.org' }  // FTC SDK Repository
+        maven { url 'https://maven.brott.dev/' }  // Custom FTC libraries (if needed)
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.firstinspires.org' }
+        maven { url 'https://maven.brott.dev/' }
+    }
+}
